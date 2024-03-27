@@ -15,7 +15,7 @@ int main(void)
             for (int n = m; n < 10; n++)
             {
                 // Start r from 0 if n is equal to m to avoid duplicate combinations
-                int r = (n == m) ? units1 : 0;
+                int r = (n == m) ? r : 0;
 
                 for (int r = r; r < 10; r++)
                 {
