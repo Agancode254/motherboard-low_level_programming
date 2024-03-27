@@ -15,9 +15,9 @@ int main(void)
             for (int n = m; n < 10; n++)
             {
                 // Start r from 0 if n is equal to m to avoid duplicate combinations
-                int start_r = (n == m) ? units1 : 0;
+                int r = (n == m) ? units1 : 0;
 
-                for (int r = start_r; r < 10; r++)
+                for (int r = r; r < 10; r++)
                 {
                     // Print the combination of two two-digit numbers
                     putchar(m + '0');
