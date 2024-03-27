@@ -2,11 +2,11 @@
 
 int main(void)
 {
-	// Let the tens digit of:
-	 first two-digit number be 'm' and second be 'n'
-	// Let the ones digit of:
-	 first two-digit number be 'q' and second be 'r'
-		 
+    // Let the tens digit of:
+    // first two-digit number be 'm' and second be 'n'
+    // Let the ones digit of:
+    // first two-digit number be 'q' and second be 'r'
+         
     // Loop through all possible combinations of two two-digit numbers
     for (int m = 0; m < 10; m++)
     {
@@ -15,9 +15,9 @@ int main(void)
             for (int n = m; n < 10; n++)
             {
                 // Start r from 0 if n is equal to m to avoid duplicate combinations
-                int r = (n == m) ? r : 0;
+                int r = (n == m) ? 0 : 0;
 
-                for (int r = r; r < 10; r++)
+                for (; r < 10; r++)
                 {
                     // Print the combination of two two-digit numbers
                     putchar(m + '0');
@@ -42,4 +42,5 @@ int main(void)
 
     return 0;
 }
+
 
